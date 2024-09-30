@@ -16,7 +16,7 @@ http_x_forwarded:
   ip: true
 languages:
   supported: null
-  default_lang: null
+  default_lang: fr
   include_default_lang: true
   include_default_lang_file_extension: true
   translations: true
@@ -41,7 +41,7 @@ pages:
     count: 20
   dateformat:
     default: null
-    short: 'jS M Y'
+    short: 'j F Y'
     long: 'F jS \a\t g:ia'
   publish_dates: true
   process:
