@@ -5,6 +5,7 @@ media_order: '1_Dimitry Thouzery_Stormy_vortex.jpg'
 taxonomy:
     category:
         - reference
+visible: false
 ---
 
 Univers graphique fort, expériences immersives, convergence art/technologie/public, vidéo/projection/matériaux.
