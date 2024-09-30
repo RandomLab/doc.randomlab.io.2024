@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<h1>Références</h1>
+
+<ul>
+{% for post in taxonomy.findTaxonomy({'category':'reference'}) %}
+    {% include 'partials/ref-list-item.html.twig' with { projet: page, page: post } %}
+{% endfor %}
+</ul>
+
+{% endblock %}

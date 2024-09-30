@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>doc.randomlab.io</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock head %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/reset.css') %}
+    {% do assets.addCss('theme://css/custom.css') %}
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('jquery', 101) %}
+{% endblock %}
+
+{% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+{% endblock %}
+
+</head>
+<body>
+
+{% block header %}
+
+    <header>
+    {% include 'partials/navigation.html.twig' %}
+    </header>
+
+{% endblock %}
+
+{% block body %}
+
+    <main>
+        <h1>Documentation Création numérique</h1>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+{% endblock %}
+
+</body>
+</html>

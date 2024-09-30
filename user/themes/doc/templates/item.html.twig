@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% block content %}
+
+<article>
+    {% include 'partials/projet-item.html.twig' with {'references':page.parent, 'truncate':false} %}
+</article>
+
+
+<h2>Références</h2>
+{% for child in collection %}
+    {% include 'partials/ref-list-item.html.twig' with { projet: page, page: child } %}
+{% endfor %}
+
+{% endblock %}

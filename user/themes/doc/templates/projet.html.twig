@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% set projet = page.find(header_var('projet_url')|defined(theme_var('projet-page'))) %}
+
+
+{% block content %}
+
+    {{ page.content|raw }}
+
+    <h1>Projets</h1>
+    <ul>
+    {% for child in collection %}
+        {% include 'partials/projet-list-item.html.twig' with { projet: page, page: child } %}
+    {% endfor %}
+    </ul>
+{% endblock %}

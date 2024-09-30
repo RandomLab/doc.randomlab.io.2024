@@ -1,0 +1,9 @@
+<li><a href="{{ page.url }}">
+
+    {% if page.header.author %}
+    {{ page.header.author }}
+    {% else %}
+    {{ page.title }}
+    {% endif %}
+
+</a></li>

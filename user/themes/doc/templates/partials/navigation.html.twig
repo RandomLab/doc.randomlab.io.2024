@@ -1,0 +1,26 @@
+{% macro loop(page) %}
+    {% for p in page.children.visible %}
+        {% if p.children.visible.count > 0 %}
+            <li>
+                <a href="{{ p.url|e }}">
+                    {{ p.menu|e }}
+                </a>
+                <ul>
+                    {{ _self.loop(p) }}
+                </ul>
+            </li>
+        {% else %}
+            <li>
+                <a href="{{ p.url|e }}">
+                    {{ p.menu|e }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+<nav>
+    <ul>
+        {{ _self.loop(pages) }}
+    </ul>
+</nav>

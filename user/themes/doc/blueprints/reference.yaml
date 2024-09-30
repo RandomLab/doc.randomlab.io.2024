@@ -1,0 +1,38 @@
+extends@: default
+
+rules:
+  slug:
+    pattern: "[a-z][a-z0-9_-]+"
+    min: 2
+    max: 80
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        advanced:
+          fields:
+            overrides:
+              fields:
+                header.child_type:
+                  default: item
+        projet:
+          type: tab
+          title: Reference Config
+
+          fields:
+
+            content_title:
+              type: spacer
+              title: Content Definition
+
+            header.content.items:
+              type: textarea
+              yaml: true
+              label: Ref
+              default: '@taxonomy'
+              validate:
+                type: yaml

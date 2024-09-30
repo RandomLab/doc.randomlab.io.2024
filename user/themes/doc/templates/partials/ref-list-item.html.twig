@@ -1,0 +1,7 @@
+{% set image = page.media.images|first %}
+
+{% if image %}
+    <li><a href="{{ page.url }}">{{ image.cropZoom(800,400).html|raw }}</a></li>
+{% else %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
