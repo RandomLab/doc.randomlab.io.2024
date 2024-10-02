@@ -1,25 +1,10 @@
-{% if truncate %}
+<h1>{{ page.title }}</h1>
 
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    {{ page.date|date(system.pages.dateformat.short) }}
-
-{% else %}
-
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    <p>{{ page.date|date(system.pages.dateformat.short) }}</p>
-
-    {% if page.header.author %}
-    <p>{{ page.header.author }}</p>
-    {% endif %}
-
-    {% if page.taxonomy.tag %}
-    <ul>
-        {% for tag in page.taxonomy.tag %}
-        <li><a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a></li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-
-    {{ page.content|raw }}
-
+{% if page.header.author %}
+{{ page.header.author }}
 {% endif %}
+
+{{ page.date|date(system.pages.dateformat.short) }}
+
+
+{{ page.content|raw }}

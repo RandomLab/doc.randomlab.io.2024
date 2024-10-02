@@ -1,6 +1,6 @@
-enabled: false
+enabled: true
 show_all: true
-built_in_css: true
+built_in_css: false
 include_home: true
 include_current: true
 icon_home: null

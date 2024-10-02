@@ -1,0 +1,93 @@
+extends@: default
+child_type: ref
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: content
+          fields:
+            additional:
+              type: section
+              title: Additional
+              underline: true
+              fields:
+                header.author:
+                  type: text
+                  label: Author
+                  placeholder: Enter authors name
+
+                header.summary:
+                  type: textArea
+                  label: Summary
+                  placeholder: Enter a short summary
+
+                # header_image:
+                #   type: section
+                #   title: Header Image
+                #   underline: true
+
+                # header.header_image:
+                #   type: toggle
+                #   toggleable: true
+                #   label: Display Header Image
+                #   help: Enabled displaying of a header image
+                #   highlight: 1
+                #   options:
+                #     1: PLUGIN_ADMIN.ENABLED
+                #     0: PLUGIN_ADMIN.DISABLED
+
+                # header.header_image_file:
+                #   type: text
+                #   toggleable: true
+                #   label: Image File
+                #   help: image filename that exists in the page folder. If not provided, will use the first image found.
+                #   placeholder: myimage.jpg
+
+                # header.header_image_width:
+                #   type: text
+                #   toggleable: true
+                #   label: Image Width
+                #   size: small
+                #   help: Header width in px
+                #   placeholder: Default is 900
+                #   validate:
+                #     type: int
+                #     min: 0
+                #     max: 5000
+
+                # header.header_image_height:
+                #   type: text
+                #   toggleable: true
+                #   label: Image Height
+                #   size: small
+                #   help: Header height in px
+                #   placeholder: Default is 300
+                #   validate:
+                #     type: int
+                #     min: 0
+                #     max: 5000
+
+
+        item:
+          type: tab
+          title: Item Config
+
+          fields:
+
+            content_title:
+              type: spacer
+              title: Content Definition
+
+            header.content.items:
+              type: textarea
+              yaml: true
+              label: Refs
+              default: '@self.children'
+              validate:
+                type: yaml

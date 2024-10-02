@@ -1,0 +1,14 @@
+@font-face{
+  font-family: 'standard';
+
+  src: url('../fonts/standard/standard-book-webfont.eot'); /* ie <= 6 */
+  src: url('../fonts/standard/standard-book-webfont.eot?#iefix') format('embedded-opentype'), /* ie 7 et 8 */
+  url('../fonts/standard/standard-book-webfont.woff') format('woff'),
+  url('../fonts/standard/standard-book-webfont.woff2') format('woff2'),
+  url('../fonts/standard/standard-book-webfont.ttf') format('truetype'),
+  url('../fonts/standard/standard-book-webfont.svg#breac_webfont') format('svg'); /* pour iOs */
+
+  font-stretch : normal;
+  font-weight : normal;
+  font-style : normal;
+}

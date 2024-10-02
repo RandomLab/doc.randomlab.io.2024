@@ -1,0 +1,34 @@
+extends@: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+
+        content:
+          type: tab
+          title: content
+          fields:
+            additional:
+              type: section
+              title: Additional
+              underline: true
+              fields:
+                header.author:
+                  type: text
+                  label: Author reference
+                  placeholder: Enter authors name
+
+        options:
+          type: tab
+          title: PLUGIN_ADMIN.OPTIONS
+
+          fields:
+            taxonomies:
+              fields:
+                header.taxonomy:
+                  default:
+                    category: ['reference']

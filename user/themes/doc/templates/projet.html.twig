@@ -10,7 +10,7 @@
     {{ page.content|raw }}
 
     <h1>Projets</h1>
-    <ul>
+    <ul class="projets">
     {% for child in collection %}
         {% include 'partials/projet-list-item.html.twig' with { projet: page, page: child } %}
     {% endfor %}

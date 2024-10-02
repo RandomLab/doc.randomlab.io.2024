@@ -5,3 +5,32 @@
 a {
     color: black;
 }
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'standard', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 20px 0 0 0;
+}
+
+p {
+    margin: 5px 0 0 0;
+}
+
+.projets li {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
