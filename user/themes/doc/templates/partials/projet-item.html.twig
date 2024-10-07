@@ -1,10 +1,9 @@
 <h1>{{ page.title }}</h1>
 
 {% if page.header.author %}
-{{ page.header.author }}
+<h2>{{ page.header.author }}</h2>
 {% endif %}
 
-{{ page.date|date(system.pages.dateformat.short) }}
-
+<h3>{{ page.date|date(system.pages.dateformat.short) }}</h3>
 
 {{ page.content|raw }}

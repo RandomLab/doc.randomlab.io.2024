@@ -1,7 +1,7 @@
 ---
 title: 'Perspective mentale '
 author: 'Maxence Mardargent'
-summary: 'Inspiré de la "Divine Comédie" de Dante, j''explore les paysages intérieurs que m''a apportés cette lecture à travers un jeu de réflexion entre vidéo-projection et matière. '
+summary: 'Inspiré de la "Divine Comédie" de Dante, j''explore les paysages intérieurs.'
 content:
     items:
         - '@self.children'

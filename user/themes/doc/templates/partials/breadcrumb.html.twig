@@ -3,32 +3,28 @@
 {% set divider = breadcrumbs_config.icon_divider_classes %}
 
 {% if crumbs|length > 1 or breadcrumbs_config.show_all %}
-<div class="breadcrumbs">
+<ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse ">
     {% for crumb in crumbs %}
-    <span>
+    <li class="list-none px-0 mx-0">
         {% if not loop.last %}
             {% if crumb.routable %}
                 <a href="{{ crumb.url|e }}">
                     <span>{{ crumb.menu|e }}</span>
                 </a>
             {% else  %}
-                <span>
-                    <span>{{ crumb.menu|e }}</span>
-                </span>
+                <span>{{ crumb.menu|e }}</span>
             {% endif %}
-            <i> > </i>
+            >
         {% else %}
             {% if breadcrumbs_config.link_trailing %}
                 <a href="{{ crumb.url|e }}">
                     <span>{{ crumb.menu|e }}</span>
                 </a>
             {% else %}
-                <span>
-                    <span>{{ crumb.menu|e }}</span>
-                </span>
+                <span class="font-bold">{{ crumb.menu|e }}</span>
             {% endif %}
         {% endif %}
-    </span>
+    </li>
     {% endfor %}
-</div>
+</ol>
 {% endif %}

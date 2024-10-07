@@ -9,8 +9,9 @@
 
     {{ page.content|raw }}
 
-    <h1>Projets</h1>
-    <ul class="projets">
+    <h1 class="my-5 font-bold">Projets</h1>
+
+    <ul class="grid grid-cols-4 gap-4 my-5">
     {% for child in collection %}
         {% include 'partials/projet-list-item.html.twig' with { projet: page, page: child } %}
     {% endfor %}

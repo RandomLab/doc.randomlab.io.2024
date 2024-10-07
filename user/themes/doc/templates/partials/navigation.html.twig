@@ -1,7 +1,7 @@
 {% macro loop(page) %}
     {% for p in page.children.visible %}
         {% if p.children.visible.count > 0 %}
-            <li>
+            <li class="list-none">
                 <a href="{{ p.url|e }}">
                     {{ p.menu|e }}
                 </a>
@@ -10,7 +10,7 @@
                 </ul>
             </li>
         {% else %}
-            <li>
+            <li class="list-none">
                 <a href="{{ p.url|e }}">
                     {{ p.menu|e }}
                 </a>

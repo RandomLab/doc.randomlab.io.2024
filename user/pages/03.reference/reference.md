@@ -1,18 +1,13 @@
 ---
-title: Projet
+title: Références
 content:
     items:
-        - '@self.children'
+        '-@taxonomy.category': reference
     limit: 5
     order:
         by: date
         dir: desc
     pagination: true
     url_taxonomy_filters: true
-published: true
-visible: true
 ---
 
-# titre du sujet
-
-détail du sujet 

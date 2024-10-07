@@ -12,8 +12,11 @@
 
 
 <h2>Références</h2>
+
+<section class="grid grid-cols-4 gap-4 my-5">
 {% for child in collection %}
     {% include 'partials/ref-list-item.html.twig' with { projet: page, page: child } %}
 {% endfor %}
+</section>
 
 {% endblock %}

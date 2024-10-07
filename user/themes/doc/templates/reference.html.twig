@@ -2,9 +2,7 @@
 
 {% block content %}
 
-<h1>Références</h1>
-
-<ul>
+<ul class="grid grid-cols-4 gap-4 my-5">
 {% for post in taxonomy.findTaxonomy({'category':'reference'}) %}
     {% include 'partials/ref-list-item.html.twig' with { projet: page, page: post } %}
 {% endfor %}

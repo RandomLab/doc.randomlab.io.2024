@@ -1,14 +1,17 @@
 {% set image = page.media.images|first %}
 {% set author = page.header.author %}
 
+<article>
+
 {% if image %}
-    <li><a href="{{ page.url }}">
-        {{ page.title }}
+    <h1><a href="{{ page.url }}">
+        {# {{ page.title }}
         {% if author %}
         {{ author }}
-        {% endif %}
-        {{ image.cropZoom(400,200).html|raw }}
-    </a></li>
+        {% endif %} #}
+        {{ image.cropZoom(400,300).html|raw }}
+    </a></h1>
 {% else %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}
+</article>
