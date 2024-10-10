@@ -5,7 +5,7 @@
 {% if crumbs|length > 1 or breadcrumbs_config.show_all %}
 <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse ">
     {% for crumb in crumbs %}
-    <li class="list-none px-0 mx-0">
+    <li class="list-none px-0 mx-0 text-gray-400">
         {% if not loop.last %}
             {% if crumb.routable %}
                 <a href="{{ crumb.url|e }}">

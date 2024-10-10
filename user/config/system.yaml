@@ -16,18 +16,18 @@ http_x_forwarded:
   ip: true
 languages:
   supported: null
-  default_lang: fr
-  include_default_lang: true
-  include_default_lang_file_extension: true
+  default_lang: null
+  include_default_lang: false
+  include_default_lang_file_extension: false
   translations: true
-  translations_fallback: true
-  session_store_active: false
-  http_accept_language: false
-  override_locale: false
-  pages_fallback_only: false
+  translations_fallback: false
+  session_store_active: true
+  http_accept_language: true
+  override_locale: true
+  pages_fallback_only: true
   debug: true
 home:
-  alias: /accueil
+  alias: /projet
   hide_in_urls: false
 pages:
   type: regular
@@ -40,9 +40,9 @@ pages:
   list:
     count: 20
   dateformat:
-    default: null
-    short: 'F jS \a\t g:ia'
-    long: 'F jS \a\t g:ia'
+    default: 'Y-m-d H:i'
+    short: 'd-m-y G:i'
+    long: 'l jS \of F g:i A'
   publish_dates: true
   process:
     markdown: true

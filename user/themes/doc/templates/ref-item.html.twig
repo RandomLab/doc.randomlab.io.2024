@@ -5,7 +5,10 @@
 
 <article>
 
-    <h1>{{ page.title }}</h1>
+    {% if page.header.author %}<h3>{{ page.header.author }}</h3>
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">{% endif %}
+    <h1 class="text-xl underline">{{ page.title }}</h1>
+
 
     {{ page.content|raw }}
 

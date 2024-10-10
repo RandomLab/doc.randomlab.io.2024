@@ -9,9 +9,10 @@
 
     {{ page.content|raw }}
 
-    <h1 class="my-5 font-bold">Projets</h1>
-
-    <ul class="grid grid-cols-4 gap-4 my-5">
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <h1 class="my-5 font-bold">Liste des projets en cours</h1>
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <ul class="grid grid-cols-none md:grid-cols-4 gap-4 my-5">
     {% for child in collection %}
         {% include 'partials/projet-list-item.html.twig' with { projet: page, page: child } %}
     {% endfor %}

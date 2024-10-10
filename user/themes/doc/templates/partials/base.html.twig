@@ -28,18 +28,18 @@
 
 {% block header %}
 
-    <header class="flex flex-row justify-between font-bold">
+    <header class="flex flex-col md:flex-row justify-between font-bold">
     {% include 'partials/navigation.html.twig' %}
     </header>
 
 {% endblock %}
-
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-400">
 {% block breadcrumb %}
     <section class="my-5">
     {% include 'partials/breadcrumb.html.twig' %}
     </section>
 {% endblock %}
-
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-400">
 {% block body %}
 
     <main>

@@ -10,10 +10,11 @@
 
 </article>
 
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+<h2>Liste des références associées au projet</h2>
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
-<h2>Références</h2>
-
-<section class="grid grid-cols-4 gap-4 my-5">
+<section class="grid grid-cols-none md:grid-cols-4 gap-4 my-5">
 {% for child in collection %}
     {% include 'partials/ref-list-item.html.twig' with { projet: page, page: child } %}
 {% endfor %}

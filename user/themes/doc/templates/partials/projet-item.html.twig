@@ -1,9 +1,9 @@
-<h1>{{ page.title }}</h1>
+<h3>{% if page.header.author %}
+<span class="font-semibold">{{ page.header.author }}</span>
+{% endif %}{{ page.date|date(system.pages.dateformat.short) }}</h3>
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
-{% if page.header.author %}
-<h2>{{ page.header.author }}</h2>
-{% endif %}
+<h1 class="text-xl underline">{{ page.title }}</h1>
 
-<h3>{{ page.date|date(system.pages.dateformat.short) }}</h3>
 
 {{ page.content|raw }}
