@@ -37,7 +37,7 @@ home:
 pages:
   type: regular                                  # EXPERIMENTAL: Page type: regular or flex
   dirs: ['page://']                              # Advanced functionality, allows for multiple page paths
-  theme: doc                                   # Default theme (defaults to "quark" theme)
+  theme: quark                                   # Default theme (defaults to "quark" theme)
   order:
     by: default                                  # Order pages by "default", "alpha" or "date"
     dir: asc                                     # Default ordering direction, "asc" or "desc"
@@ -149,8 +149,8 @@ log:
     tag: grav                                   # Syslog tag. Default: "grav".
 
 debugger:
-  enabled: true                                 # Enable Grav debugger and following settings
-  provider: debugbar                            # Debugger provider: debugbar | clockwork
+  enabled: false                                 # Enable Grav debugger and following settings
+  provider: clockwork                            # Debugger provider: debugbar | clockwork
   censored: false                                # Censor potentially sensitive information (POST parameters, cookies, files, configuration and most array/object data in log messages)
   shutdown:
     close_connection: true                       # Close the connection before calling onShutdown(). false for debugging
@@ -169,6 +169,7 @@ images:
   defaults:
     loading: auto                                # Let browser pick [auto|lazy|eager]
     decoding: auto                               # Let browser pick [auto|sync|async]
+    fetchpriority: auto                          # Let browser pick [auto|high|low]
   watermark:
     image: 'system://images/watermark.png'       # Path to a watermark image
     position_y: 'center'                         # top|center|bottom

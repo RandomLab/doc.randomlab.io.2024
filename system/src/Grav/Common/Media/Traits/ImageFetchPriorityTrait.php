@@ -11,27 +11,27 @@ namespace Grav\Common\Media\Traits;
 use Grav\Common\Grav;
 
 /**
- * Trait ImageDecodingTrait
+ * Trait ImageFetchPriorityTrait
  * @package Grav\Common\Media\Traits
  */
 
-trait ImageDecodingTrait
+trait ImageFetchPriorityTrait
 {
     /**
-     * Allows to set the decoding attribute from Markdown or Twig
+     * Allows to set the fetchpriority attribute from Markdown or Twig
      *
      * @param string|null $value
      * @return $this
      */
-    public function decoding($value = null)
+    public function fetchpriority($value = null)
     {
         if (null === $value) {
-            $value = Grav::instance()['config']->get('system.images.defaults.decoding', 'auto');
+            $value = Grav::instance()['config']->get('system.images.defaults.fetchpriority', 'auto');
         }
 
-        // Validate the provided value (similar to loading)
+        // Validate the provided value (similar to loading and decoding attributes)
         if ($value !== null && $value !== 'auto') {
-            $this->attributes['decoding'] = $value;
+            $this->attributes['fetchpriority'] = $value;
         }
 
         return $this;

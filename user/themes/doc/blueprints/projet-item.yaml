@@ -91,3 +91,12 @@ form:
               default: '@self.children'
               validate:
                 type: yaml
+
+            header.content.limit:
+              type: text
+              label: Max Item Count
+              default: 20
+              validate:
+                required: true
+                type: int
+                min: 1

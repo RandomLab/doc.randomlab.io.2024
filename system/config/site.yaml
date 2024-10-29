@@ -1,11 +1,11 @@
 title: Grav                                 # Name of the site
-default_lang: fr                            # Default language for site (potentially used by theme)
+default_lang: en                            # Default language for site (potentially used by theme)
 
 author:
   name: John Appleseed                      # Default author name
   email: 'john@example.com'                 # Default author email
 
-taxonomies: [category]                  # Arbitrary list of taxonomy types
+taxonomies: [category,tag]                  # Arbitrary list of taxonomy types
 
 metadata:
   description: 'My Grav Site'               # Site description

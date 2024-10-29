@@ -5,6 +5,7 @@ summary: 'Inspiré de la "Divine Comédie" de Dante, j''explore les paysages int
 content:
     items:
         - '@self.children'
+    limit: 20
 ---
 
 # Description
@@ -19,3 +20,6 @@ Je désire concevoir une scénographie composée d'une ou plusieurs animations v
 
 - Pour l'animation : Blender.
 - Pour la scénographie : ateliers.
+
+
+[plugin:youtube](https://www.youtube.com/watch?v=5k4aREESpsk)

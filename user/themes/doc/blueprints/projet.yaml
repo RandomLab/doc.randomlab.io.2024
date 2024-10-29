@@ -41,7 +41,7 @@ form:
             header.content.limit:
               type: text
               label: Max Item Count
-              default: 5
+              default: 50
               validate:
                 required: true
                 type: int

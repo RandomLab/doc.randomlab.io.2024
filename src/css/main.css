@@ -22,4 +22,8 @@
     p {
         @apply my-5 w-full md:w-2/3;
     }
+
+    a {
+        @apply underline;
+    }
 }
