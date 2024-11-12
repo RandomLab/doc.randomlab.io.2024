@@ -1,5 +1,5 @@
 ---
-title: Projet
+title: 'L''ornement'
 content:
     items:
         - '@self.children'
@@ -11,9 +11,11 @@ content:
     url_taxonomy_filters: true
 published: true
 visible: true
+taxonomy:
+    category:
+        - sujet
+subtitle: 'Sujet Année 3 '
 ---
-
-# L'ornement numérique
 
 * Collecter des références (images, forme, dessin, vidéo)
 * Dessiner, penser un système ornemental en relation avec vos références

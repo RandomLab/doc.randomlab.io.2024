@@ -27,7 +27,7 @@ languages:
   pages_fallback_only: true
   debug: true
 home:
-  alias: /projet
+  alias: /home
   hide_in_urls: false
 pages:
   type: regular
@@ -179,6 +179,7 @@ images:
   defaults:
     loading: auto
     decoding: auto
+    fetchpriority: auto
   watermark:
     image: 'system://images/watermark.png'
     position_y: center

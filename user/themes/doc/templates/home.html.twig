@@ -1,0 +1,14 @@
+{% extends 'partials/base.html.twig' %}
+
+
+{% block content %}
+
+    {{ page.content|raw }}
+
+    <ul>
+        {% for projet in taxonomy.findTaxonomy({'category':'sujet'}) %}
+            <li><a href="{{ projet.url }}">{{ projet.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

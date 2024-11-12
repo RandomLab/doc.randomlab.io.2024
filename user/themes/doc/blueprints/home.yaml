@@ -14,41 +14,15 @@ form:
       active: 1
 
       fields:
-        content:
-          type: tab
-          title: content
-          fields:
-            additional:
-              type: section
-              title: Additional
-              underline: true
-              fields:
-                header.subtitle:
-                  type: text
-                  label: subtitle
-                  placeholder: write a subtitle
-
         advanced:
           fields:
             overrides:
               fields:
                 header.child_type:
                   default: item
-
-        options:
+        home:
           type: tab
-          title: PLUGIN_ADMIN.OPTIONS
-
-          fields:
-            taxonomies:
-              fields:
-                header.taxonomy:
-                  default:
-                    category: [ 'sujet' ]
-
-        projet:
-          type: tab
-          title: Projet Config
+          title: home Config
 
           fields:
 
@@ -60,7 +34,7 @@ form:
               type: textarea
               yaml: true
               label: Items
-              default: '@self.children'
+              default: '@taxonomy.tag'
               validate:
                 type: yaml
 
@@ -76,7 +50,7 @@ form:
             header.content.order.by:
               type: select
               label: Order By
-              default: date
+              default: title
               options:
                 folder: Folder
                 title: Title
@@ -86,7 +60,7 @@ form:
             header.content.order.dir:
               type: select
               label: Order
-              default: desc
+              default: asc
               options:
                 asc: Ascending
                 desc: Descending
