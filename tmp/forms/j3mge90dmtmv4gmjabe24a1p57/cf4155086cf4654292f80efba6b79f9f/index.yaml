@@ -1,0 +1,20 @@
+form: flex-pages
+id: ''
+unique_id: cf4155086cf4654292f80efba6b79f9f
+url: 'http://localhost:8000/admin/pages/projet/projet-1'
+user:
+  username: admin
+  email: admin@root.me
+timestamps:
+  created: 1731494013
+  updated: 1731494013
+data: {  }
+files:
+  custom_file:
+    MG_8194.jpg:
+      name: MG_8194.jpg
+      type: image/jpeg
+      size: 581427
+      tmp_name: lDsIpqc0CaYr
+  custom_file/original:
+    MG_8194.jpg: null

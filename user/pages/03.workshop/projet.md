@@ -12,7 +12,7 @@ content:
 taxonomy:
     category:
         - sujet
-subtitle: 'Workshop biennale'
+test: 'test hello'
 ---
 
 hello

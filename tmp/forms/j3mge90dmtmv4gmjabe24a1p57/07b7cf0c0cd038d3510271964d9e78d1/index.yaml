@@ -1,0 +1,20 @@
+form: flex-pages
+id: ''
+unique_id: 07b7cf0c0cd038d3510271964d9e78d1
+url: 'http://localhost:8000/admin/pages/projet/perspective-mentale'
+user:
+  username: admin
+  email: admin@root.me
+timestamps:
+  created: 1731493439
+  updated: 1731493439
+data: {  }
+files:
+  header.custom_file:
+    dessin4.svg:
+      name: dessin4.svg
+      type: image/svg+xml
+      size: 119154
+      tmp_name: ZHz2vqO51rFx
+  header.custom_file/original:
+    dessin4.svg: null

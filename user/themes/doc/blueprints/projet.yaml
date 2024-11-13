@@ -16,17 +16,11 @@ form:
       fields:
         content:
           type: tab
-          title: content
+
           fields:
-            additional:
-              type: section
-              title: Additional
-              underline: true
-              fields:
-                header.subtitle:
-                  type: text
-                  label: subtitle
-                  placeholder: write a subtitle
+            header.subtitle:
+              label: Subtitle
+              type: text
 
         advanced:
           fields:

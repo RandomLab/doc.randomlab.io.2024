@@ -661,7 +661,6 @@ video {
 .underline {
   text-decoration-line: underline;
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -682,11 +681,9 @@ video {
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
-
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
-
 @media (prefers-color-scheme: dark) {
 
   .dark\:bg-gray-400 {
