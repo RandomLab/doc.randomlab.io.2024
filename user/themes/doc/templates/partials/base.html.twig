@@ -16,6 +16,7 @@
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 101) %}
+    {% do assets.addJs('theme://js/lazysizes.min.js', {group:'bottom'}) %}
 {% endblock %}
 
 {% block assets deferred %}
@@ -49,5 +50,8 @@
 
 {% endblock %}
 
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
 </body>
 </html>

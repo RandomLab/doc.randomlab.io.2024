@@ -10,7 +10,7 @@
     {% endif %}
 
     {% if image %}
-    {{ image.cropZoom(400,300).html|raw }}
+    {{ image.loading('lazy').cropZoom(400,300).html|raw }}
     {% else %}
     <p>{{ page.header.summary}}</p>
     {% endif %}
